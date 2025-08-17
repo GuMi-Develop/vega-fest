@@ -81,5 +81,7 @@
 
   .icons-div {
     gap: 11px;
+    width: 33vw;
+    overflow-wrap: break-word;
   }
 }
