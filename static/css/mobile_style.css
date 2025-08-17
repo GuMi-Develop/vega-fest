@@ -73,12 +73,18 @@
   }
 
   .icons-fon {
-    width: 14vw;
+    width: 18vw;
   }
 
   .icons-div {
-    gap: 5px;
+    gap: 20px;
     width: 33vw;
+    white-space: normal;
     overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  .icons-txt {
+    margin: 0;
+    font-size: 90%;
   }
 }
