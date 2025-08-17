@@ -15,7 +15,7 @@
   }
   .header {
     pointer-events: auto;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -48,5 +48,29 @@
   }
   .tags.active {
     display: flex;
+  }
+  .txt-about-fest {
+    width: 100%;
+  }
+  .bubles,
+  .bubles-schedule,
+  .pic-schedule {
+    display: none; /* или переставить их внутрь контейнера */
+  }
+  .hero-wrapper {
+    width: 100%;
+  }
+  .picture-buclet {
+    display: none;
+  }
+  .container-txt {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  txt-about-fest {
+    padding: 100px 0px;
   }
 }
