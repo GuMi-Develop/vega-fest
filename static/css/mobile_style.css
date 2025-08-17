@@ -76,6 +76,10 @@
     width: 18vw;
   }
 
+  .about-fest {
+    height: none;
+  }
+
   .icons-div {
     gap: 20px;
     width: 33vw;
