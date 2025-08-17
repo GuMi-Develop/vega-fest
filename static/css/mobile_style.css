@@ -72,15 +72,12 @@
     text-align: center;
   }
 
-  .about-fest {
-    height: 100vh;
-  }
   .icons-fon {
     width: 14vw;
   }
 
   .icons-div {
-    gap: 11px;
+    gap: 5px;
     width: 33vw;
     overflow-wrap: break-word;
   }
