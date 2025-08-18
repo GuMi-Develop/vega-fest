@@ -46,8 +46,7 @@
     padding: 0px 10px;
   }
   .bubles,
-  .bubles-schedule,
-  .pic-schedule {
+  .bubles-schedule {
     display: none; /* или переставить их внутрь контейнера */
   }
   .hero-wrapper {
@@ -145,5 +144,42 @@
 
   .schedule-txt {
     display: none;
+  }
+  .schedule-div {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .schedule-place,
+  .schedule-date,
+  .schedule-time {
+    text-align: center;
+  }
+  .schedule {
+    padding: 20px;
+    gap: 20px;
+    height: fit-content;
+    pointer-events: auto;
+    flex-direction: column;
+  }
+
+  .pic-schedule {
+    width: 85%;
+  }
+
+  .schedule-heading {
+    text-align: center;
+  }
+
+  .schedule-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 10px;
+    margin-top: 3%;
+    width: 55%;
+    height: 7vh;
   }
 }

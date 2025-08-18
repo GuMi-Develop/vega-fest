@@ -57,6 +57,15 @@ const pic_schedule = document.querySelector(".pic-schedule");
 const date_btn = document.querySelector(".date-btn");
 const place_btn = document.querySelector(".place-btn");
 
+function heightPicSchedule() {
+  if (window.innerWidth >= 480) return;
+  pic_schedule.style.height = pic_schedule.clientWidth + "px";
+}
+
+heightPicSchedule();
+
+window.addEventListener("resize", heightPicSchedule);
+
 date_btn.addEventListener("click", () => {
   pic_schedule.style.backgroundImage = "url('static/img/schedule.PNG')";
 });
