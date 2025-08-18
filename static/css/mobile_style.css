@@ -191,6 +191,10 @@
     font-size: 105%;
   }
 
+  .txt-about-vega span {
+    font-weight: 500;
+  }
+
   .title-about-vega div {
     width: 90%;
   }
@@ -228,5 +232,11 @@
 
   .vega-href {
     width: 60%;
+  }
+  .date {
+    pointer-events: auto;
+  }
+  .footer {
+    pointer-events: auto;
   }
 }
