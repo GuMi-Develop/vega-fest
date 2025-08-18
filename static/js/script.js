@@ -31,21 +31,20 @@ images.forEach((img) => {
 });
 
 function updateCaptionsPosition() {
+  if (window.innerWidth <= 480) return;
   const images = document.querySelectorAll(".image");
   images.forEach((img) => {
     const caption = img.querySelector("span");
     if (!caption) return;
 
     const h = img.offsetHeight;
-    caption.style.marginTop = h * 0.73 + "px"; // 70% высоты
+    caption.style.marginTop = h * 0.73 + "px";
   });
 }
 
-// запуск при загрузке и изменении окна
 window.addEventListener("load", updateCaptionsPosition);
 window.addEventListener("resize", updateCaptionsPosition);
 
-// и при клике (т.к. flex у active меняет размер блока)
 images.forEach((img) => {
   img.addEventListener("click", () => {
     images.forEach((i) => i.classList.remove("active"));
