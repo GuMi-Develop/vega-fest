@@ -165,7 +165,7 @@
   }
 
   .pic-schedule {
-    width: 85%;
+    width: 90%;
   }
 
   .schedule-heading {
@@ -181,5 +181,25 @@
     margin-top: 3%;
     width: 55%;
     height: 7vh;
+  }
+
+  .title-about-vega {
+    gap: 10px;
+  }
+
+  .txt-about-vega {
+    font-size: 105%;
+  }
+
+  .title-about-vega div {
+    width: 90%;
+  }
+
+  .swiper-main {
+    margin-top: 5px;
+    height: 100%;
+  }
+  .swiper {
+    margin: 0;
   }
 }
