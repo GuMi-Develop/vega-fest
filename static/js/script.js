@@ -30,6 +30,30 @@ images.forEach((img) => {
   });
 });
 
+function updateCaptionsPosition() {
+  const images = document.querySelectorAll(".image");
+  images.forEach((img) => {
+    const caption = img.querySelector("span");
+    if (!caption) return;
+
+    const h = img.offsetHeight;
+    caption.style.marginTop = h * 0.73 + "px"; // 70% высоты
+  });
+}
+
+// запуск при загрузке и изменении окна
+window.addEventListener("load", updateCaptionsPosition);
+window.addEventListener("resize", updateCaptionsPosition);
+
+// и при клике (т.к. flex у active меняет размер блока)
+images.forEach((img) => {
+  img.addEventListener("click", () => {
+    images.forEach((i) => i.classList.remove("active"));
+    img.classList.add("active");
+    updateCaptionsPosition();
+  });
+});
+
 const pic_schedule = document.querySelector(".pic-schedule");
 const date_btn = document.querySelector(".date-btn");
 const place_btn = document.querySelector(".place-btn");
@@ -81,11 +105,4 @@ window.addEventListener("load", () => {
     },
   });
   swiper.update();
-});
-
-const burger = document.getElementById("burger");
-const tags = document.getElementById("tags");
-
-burger.addEventListener("click", () => {
-  tags.classList.toggle("active");
 });

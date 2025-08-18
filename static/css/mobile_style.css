@@ -81,6 +81,11 @@
 
   .about-fest {
     height: 110vh;
+    background: linear-gradient(
+      179deg,
+      rgba(77, 161, 161, 1) 0%,
+      rgb(255, 255, 255) 100%
+    );
   }
 
   .icons-div {
