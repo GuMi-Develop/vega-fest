@@ -45,6 +45,11 @@
     width: 100%;
     padding: 0px 10px;
   }
+
+  .txt-about-fest span {
+    font-weight: 600;
+  }
+
   .bubles,
   .bubles-schedule {
     display: none; /* или переставить их внутрь контейнера */
@@ -204,7 +209,7 @@
     height: 100%;
   }
   .swiper {
-    height: 40vh;
+    height: 37vh;
     margin: 0;
   }
 
