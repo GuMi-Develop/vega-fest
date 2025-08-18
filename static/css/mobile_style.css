@@ -105,12 +105,12 @@
   .images {
     flex-direction: column;
     width: 100%;
-    gap: 8px; /* расстояние между блоками */
+    gap: 8px;
   }
 
   .image {
     flex: none;
-    height: 8vh; /* свернутый маленький */
+    height: 8vh;
     border-radius: 15px;
     transition: height 0.4s ease;
     background-size: cover;
@@ -120,10 +120,9 @@
   }
 
   .image.active {
-    height: 45vh; /* активный большой */
+    height: 45vh;
   }
 
-  /* Подписи скрыты у свернутых */
   .image span {
     position: absolute;
     bottom: 10px;
@@ -134,7 +133,7 @@
     width: 90%;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background: rgba(0, 0, 0, 0.1); /* затемнение для читаемости */
+    background: rgba(0, 0, 0, 0.2);
     color: white;
     padding: 5px;
     border-radius: 10px;
