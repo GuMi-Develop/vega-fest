@@ -203,4 +203,30 @@
     height: 40vh;
     margin: 0;
   }
+
+  .num-email h1 {
+    font-size: 110%;
+  }
+  .num-email p {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 100%;
+  }
+
+  .geo-links h1 {
+    font-size: 110%;
+  }
+
+  .geo-links p {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 100%;
+  }
+  .links {
+    display: none;
+  }
+
+  .vega-href {
+    width: 60%;
+  }
 }
