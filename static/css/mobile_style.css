@@ -134,7 +134,7 @@
     width: 90%;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background: rgba(0, 0, 0, 0.4); /* затемнение для читаемости */
+    background: rgba(0, 0, 0, 0.1); /* затемнение для читаемости */
     color: white;
     padding: 5px;
     border-radius: 10px;
