@@ -67,7 +67,7 @@ heightPicSchedule();
 window.addEventListener("resize", heightPicSchedule);
 
 date_btn.addEventListener("click", () => {
-  pic_schedule.style.backgroundImage = "url('static/img/schedule.PNG')";
+  pic_schedule.style.backgroundImage = "url('static/img/schedule.JPEG')";
 });
 
 place_btn.addEventListener("click", () => {
