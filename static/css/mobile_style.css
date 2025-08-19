@@ -7,6 +7,11 @@
     overflow: auto;
     pointer-events: none;
   }
+
+  html {
+    background-color: #ba7070;
+  }
+
   .headbar {
     top: 0;
     background-image: url("../img/comunity_mobile.JPEG");
@@ -94,6 +99,7 @@
   }
 
   .events {
+    background-color: #fff;
     display: flex;
     justify-content: center;
     pointer-events: auto;
@@ -188,6 +194,10 @@
     height: 7vh;
   }
 
+  .about-vega {
+    background-color: #fff;
+  }
+
   .title-about-vega {
     gap: 10px;
   }
@@ -220,6 +230,10 @@
     padding: 5px 10px;
     text-align: center;
     font-size: 100%;
+  }
+
+  .footer {
+    background-color: #fff;
   }
 
   .geo-links h1 {
