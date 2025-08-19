@@ -74,6 +74,25 @@ place_btn.addEventListener("click", () => {
   pic_schedule.style.backgroundImage = "url('static/img/place.PNG')";
 });
 
+const metaThemeColor = document.querySelector("meta[name=theme-color]");
+const sections = document.querySelectorAll(
+  ".headbar, .about-fest, .events, .about-vega"
+);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const bgColor = getComputedStyle(entry.target).backgroundColor;
+        metaThemeColor.setAttribute("content", bgColor);
+      }
+    });
+  },
+  { threshold: 0.6 }
+);
+
+sections.forEach((section) => observer.observe(section));
+
 window.addEventListener("load", () => {
   new Swiper(".swiper", {
     initialSlide: 3,
