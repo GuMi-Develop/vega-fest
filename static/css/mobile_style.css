@@ -259,3 +259,16 @@
     pointer-events: auto;
   }
 }
+
+@media (max-width: 1440px) {
+  .caption,
+  .caption2,
+  .caption3,
+  .caption4 {
+    font-size: 140%;
+  }
+
+  .txt-about-vega {
+    font-size: 105%;
+  }
+}
