@@ -64,6 +64,7 @@ function heightPicSchedule() {
 
 heightPicSchedule();
 
+window.addEventListener("load", heightPicSchedule);
 window.addEventListener("resize", heightPicSchedule);
 
 date_btn.addEventListener("click", () => {
