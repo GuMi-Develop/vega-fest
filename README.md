@@ -10,4 +10,4 @@
 - Swiper.js
 
 ## 📰Лицензия
-MIT © 2025 KytakBR
+MIT © 2025 GuMi-Develop
